@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 @media only screen and (max-width: 720px) {
-    footer,body,header,main,.img-footer,.formularios,.contents-footer{
+    footer,body,header,nav,main,.cuerpo, .barra_navegacion, .logo,.header-completo,.formularios,.contents-footer{
         width: 100%;
     }
 }
@@ -23,17 +23,17 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 900px;
+    height: 900px;    
     display: flex;
 }
 
 .cuerpo .informacion{
     margin-top: 15%;
     margin-left: 20%;
-    width: 30%;
-    height: 30%;
     border-radius: 15px 0px 0px 15px;
     background-color: rgba(77, 174, 48, 0.8);
+    height: 45%;
+    width: 30%;
 }
 .cuerpo .informacion .quienes-somos{
     font-size: 30px;
@@ -44,6 +44,7 @@ body{
 .cuerpo .informacion .info{
     font-size: 20px;
     padding: 3px;
+    padding-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -51,7 +52,7 @@ body{
     margin-top: 15%;
     margin-right: 20%;
     width: 30%;
-    height: 30%;
+    height: 45%;
     border-radius: 0px 15px 15px 0px;
     background-color: rgba(68,172,204, 0.8);
 }
@@ -67,12 +68,13 @@ body{
     padding: 3px;
     margin-left: 10px;
     margin-right: 10px;
+    padding-top: 20px;
 }
 .cuerpo .registrarse button{
     text-align: center;
     height: 50px;
     width: 250px;
-    margin-top: 30px;
+    margin-top: 100px;
     margin-left: 30%;
     border-radius: 10px;
     background-color: white;
@@ -107,7 +109,6 @@ header{
     justify-content: space-between;
     align-items: center; 
 }
-
 
 
 
@@ -161,43 +162,35 @@ footer .datos-contacto{
 /* NAV */
 
 nav{
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: flex;    
     align-items: center;
-    text-decoration: none;  
-     
+    text-decoration: none;       
 }
 
 .items-nav{
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: flex;    
     align-items: center;
-   
 }
 
 nav a{
-    height: 100%;
     display: flex;
     text-decoration: none;
     color: rgb(64, 64, 64);
-    font-weight: 600;
-    padding: 10px;   
+    font-weight: 600; 
 }
 nav a:hover{
     color: white;
 }
 nav > ul{
     height: 100%;
-    display: flex;
-    margin: 0 150px;
+    display: flex;    
+    margin-top: 15px;
 }
-nav > ul > li{
+nav > ul > li{    
     height: 100%;
     width: 200px;
     justify-content: space-between;
-    margin: 0 50px;
+    /*margin: 0 50px;*/
     list-style: none;
     position: relative;
 }
