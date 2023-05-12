@@ -6,12 +6,44 @@ body{
     background-color: rgb(77, 174, 48);
     position: relative;
     width: 100%;
-    padding-bottom: 800px;
+    padding-bottom: 600px;
     padding-top: 200px;
     min-height: 100vh;
 }
 
+.cuerpo{
+    margin-top: 5px;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5,7,12,0.75)),
+    url(unahur-sede-malvinas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    display: flex;
+}
 
+.cuerpo .informacion{
+    margin-top: 15%;
+    margin-left: 20%;
+    width: 30%;
+    height: 30%;
+    background-color: coral;
+}
+.cuerpo .informacion .quienes-somos{
+    font-size: 30px;
+    text-align: center;
+}
+.cuerpo .registrarse{
+    margin-top: 15%;
+    margin-right: 20%;
+    width: 30%;
+    height: 30%;
+    background-color: gray;
+}
+.cuerpo .registrarse .titulo{
+    font-size: 30px;
+    text-align: center;
+}
 /* HEADER */
 
 header{
@@ -32,25 +64,24 @@ header{
 footer{
     position: absolute;
     bottom: 0;
-    background-color: blue;
     display: flex;
     align-items: end;
     width: 100%;
     min-height: 100px;
 }
 footer .redes-volver{
-    float: left;
     width: 50%;
     background-color: rgb(77, 174, 48);
     padding: 5px;
-    list-style: none;
     text-align: center;
-    
-    padding: 15px;    
+    border-radius: 30px 0 0 30px;
+    padding: 15px;  
+    margin-bottom: 10px;  
 }
 footer .redes-volver a{    
     padding: 15px;   
     margin: 15px 0px;
+    text-decoration: none;
 }
 footer .redes-volver a img{
     padding: 20px 0px;
@@ -58,15 +89,21 @@ footer .redes-volver a img{
 
 footer .mapa{
     width: 50%;
-    background-color: red;
     padding: 30px;
     padding-left: 150px;
+}
+footer .mapa h5{
+    background-color: rgb(77, 174, 48);
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
 }
 
 footer .datos-contacto{
     width: 50%;
-    background-color: purple;
     padding: 50px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 /* NAV */
