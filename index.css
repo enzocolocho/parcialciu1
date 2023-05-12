@@ -19,7 +19,7 @@ body{
 .cuerpo{
     margin-top: 5px;
     background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5,7,12,0.75)),
-    url(unahur-sede-malvinas.jpg);
+    url(imagenes/unahur-sede-malvinas.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -332,6 +332,7 @@ nav ul li button{
     border-radius: 15px;
     color: rgb(68,172,204);
     font-weight: 500;
+    transition: all 300ms ease;
 }
 .formulario form .mb-3 input#enviar:hover{
     transform: scale(1.1);
@@ -348,6 +349,7 @@ nav ul li button{
     margin-right: 200px;
     color: red;
     font-weight: 500;
+    transition: all 300ms ease;
 }
 .formulario form .mb-3 input#reestablecer:hover{
     transform: scale(1.1);
@@ -355,6 +357,9 @@ nav ul li button{
     color: white;
 }
 
+.formulario .hiddenahref{
+    opacity: 0;
+}
 
 /* DARKMODE */
 html.dark-mode{
