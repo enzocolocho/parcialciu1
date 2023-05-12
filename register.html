@@ -14,14 +14,17 @@
 <body>
     <!-- HEADER -->
     <header>
+        <!-- LOGO -->
         <div class="logo">
             <a href="index.html" class="logo">
                 <img src="logo_unahur.png" alt="Universidad Nacional de Hurlingham">
             </a>
             <p>Universidad Nacional de Hurlingham</p>
         </div>
+        <!-- BARRA DE NAVEGACION -->
         <div class="barra_navegacion">
             <nav class="barra_navegacion">
+                <!-- LISTA DE ITEMS DE NAVEGACION -->
                 <ul class="items-nav">
                     <li><a href="">Institucional</a>
                         <ul>
@@ -44,12 +47,11 @@
                         </ul>
                     </li>                    
                     <li><a href="register.html" class="inscripcion">Inscribirse</a></li>  
-                    <li>
-                        <!-- 
-                            <button onclick='document.documentElement.classList.toggle('dark-mode')'>
-                            <img src="luna.png" alt="">
-                            </button>
-                        -->                        
+                    <li>                    
+                            <button id="boton-dark-mode">
+                                <img src="luna.png" alt="">
+                            </button>     
+                            <script src="index.js"></script>                                         
                     </li>                  
                 </ul>
             </nav>
@@ -76,8 +78,8 @@
                 <input type="text" class="form-control" aria-describedby="input">
             </div>
             <div class="mb-3">
-                <input type="submit" value="Send" id="enviar">
-                <input type="reset" value="Reset" id="reestablecer">
+                <input type="submit" value="Enviar" id="enviar">
+                <input type="reset" value="Reestablecer" id="reestablecer">
             </div>
         </form>
     </div>    

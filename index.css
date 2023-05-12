@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
+@media only screen and (max-width: 720px) {
+    footer,body,header,main,.img-footer,.formularios,.contents-footer{
+        width: 100%;
+    }
+}
 /* BODY */
 
 body{
@@ -71,9 +76,18 @@ body{
     margin-left: 30%;
     border-radius: 10px;
     background-color: white;
+    border: 0;
     font-size: 18px;
     font-weight: 650;
     transition: all 300ms ease;
+}
+.cuerpo .registrarse button a{
+    text-decoration: none;
+    color: black;
+}
+.cuerpo .registrarse button:hover a{
+    text-decoration: none;
+    color: rgb(77, 174, 48);
 }
 .cuerpo .registrarse button:hover{
     text-align: center;
@@ -244,6 +258,13 @@ nav ul li:hover ul {
     opacity: 1;
     top: 65px;
 }
+nav ul li button{
+    background-color: rgb(77, 174, 48);
+    border: none;
+    margin-top: 13px;
+    margin-left: 30px;
+}
+
 /* DIVS */
 
 
@@ -301,14 +322,43 @@ nav ul li:hover ul {
 .formulario form{
     padding: 30px;
 }
-.formulario form .mb-3 .enviar{
-    color: black;
+
+.formulario form .mb-3 input#enviar{
+    height: 50px;
+    width: 200px;
+    margin-left: 200px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 15px;
+    color: rgb(68,172,204);
+    font-weight: 500;
+}
+.formulario form .mb-3 input#enviar:hover{
+    transform: scale(1.1);
+    background-color: rgb(68,172,204);
+    color: white;
+}
+.formulario form .mb-3 input#reestablecer{
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+    border: none;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-right: 200px;
+    color: red;
+    font-weight: 500;
+}
+.formulario form .mb-3 input#reestablecer:hover{
+    transform: scale(1.1);
+    background-color: red;
+    color: white;
 }
 
 
 /* DARKMODE */
 html.dark-mode{
-    filter: invert(100%)
+    filter: invert(100%);
 }
 
 html.dark-mode .logo img{
@@ -316,5 +366,31 @@ html.dark-mode .logo img{
 }
 
 html.dark-mode .barra_navegacion .barra_navegacion{
+    filter: invert(100%);
+}
+
+html.dark-mode .cuerpo {
+    filter: invert(100%);
+}
+
+html.dark-mode .mapa {
+    filter: invert(100%);
+}
+
+html.dark-mode .datos-contacto .card {
+    filter: invert(100%);
+}
+html.dark-mode .datos-contacto .card .card-img img{
+    filter: invert(100%);
+}
+html.dark-mode .datos-contacto {
+    filter: invert(100%);    
+}
+
+html.dark-mode .redes-volver {
+    filter: invert(100%);
+}
+
+html.dark-mode .formulario {
     filter: invert(100%);
 }
