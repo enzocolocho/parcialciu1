@@ -6,7 +6,7 @@ var cambiarModo = function dark_mode(){
 boton.addEventListener("click", cambiarModo);
 
 
-/* FORMULARIO */
+/* FORMULARIO 
 const $form = document.getElementById('#form')
 const $buttonMailto = document.querySelector('#hiddenahref')
 
@@ -19,3 +19,4 @@ function handleSubmit(event) {
     $buttonMailto.setAttribute('href', `mailto:enzo.colocho.99@gmail.com?subject=nombre ${form.get('name')}  correo ${form.get('email')}&body=${form.get('comentario')}`)
     $buttonMailto.click()
 }
+*/
